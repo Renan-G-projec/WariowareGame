@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://ches0yn5rngtr"]
+
+[ext_resource type="Script" uid="uid://dfkvsgemhn1xk" path="res://scenes/LevelScreen.gd" id="1_dfg5a"]
+[ext_resource type="Texture2D" uid="uid://b1g5mie1ap6lx" path="res://assets/leaf.png" id="1_in5yg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ghte6"]
+load_path = "res://.godot/imported/waterfall.jpg-4beff2fc4de38902a238f09973b35926.ctex"
+
+[node name="LevelScene" type="Node2D" unique_id=1961896123]
+script = ExtResource("1_dfg5a")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1344164767]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 1152.0
+offset_bottom = 644.0
+texture = SubResource("CompressedTexture2D_ghte6")
+expand_mode = 1
+
+[node name="LeafContainer" type="HBoxContainer" parent="." unique_id=1773857078]
+offset_left = 248.0
+offset_top = 73.0
+offset_right = 904.0
+offset_bottom = 201.0
+
+[node name="Leaf1" type="TextureRect" parent="LeafContainer" unique_id=375270967]
+layout_mode = 2
+texture = ExtResource("1_in5yg")
+
+[node name="Leaf2" type="TextureRect" parent="LeafContainer" unique_id=604344723]
+layout_mode = 2
+texture = ExtResource("1_in5yg")
+
+[node name="Leaf3" type="TextureRect" parent="LeafContainer" unique_id=31025292]
+layout_mode = 2
+texture = ExtResource("1_in5yg")
+
+[node name="Leaf4" type="TextureRect" parent="LeafContainer" unique_id=978661417]
+layout_mode = 2
+texture = ExtResource("1_in5yg")
+
+[node name="Leaf5" type="TextureRect" parent="LeafContainer" unique_id=1924776996]
+layout_mode = 2
+texture = ExtResource("1_in5yg")
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1014700294]
+offset_left = 541.0
+offset_top = 552.0
+offset_right = 612.0
+offset_bottom = 621.0
+theme_override_font_sizes/normal_font_size = 48
+text = "0.0"
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=454923640]
+offset_left = 490.0
+offset_top = 208.0
+offset_right = 662.0
+offset_bottom = 275.0
+theme_override_font_sizes/normal_font_size = 48
+text = "Level #"
